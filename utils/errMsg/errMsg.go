@@ -12,9 +12,11 @@ const (
 	ErrorTokenRuntime      = 1005
 	ErrorTokenWrong     = 1006
 	ErrorTokenTypeWrong = 1007
+	ErrorUserNoRight = 1008
 	// code = 2000... 文章模块的错误
 
-	// code = 3000... 分类模块的错误
+	// ErrorCateNameUsed  code = 3000... 分类模块的错误
+	ErrorCateNameUsed = 3001
 )
 
 var CodeMsg = map[int]string{
@@ -27,6 +29,8 @@ var CodeMsg = map[int]string{
 	ErrorTokenRuntime:   "TOKEN已过期",
 	ErrorTokenWrong:     "TOKEN不正确",
 	ErrorTokenTypeWrong: "TOKEN格式错误",
+	ErrorCateNameUsed: "分类已存在",
+	ErrorUserNoRight: "该用户不具备管理员权限",
 }
 
 
